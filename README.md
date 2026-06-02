@@ -1,6 +1,6 @@
 # Minishell Overview
 Minishell is a custom implementation of a basic command-line shell, modeled after `bash`
-(https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L1-L3) It provides a persistent interactive interface designed to parse user input, manage environment variables, and execute commands within a Read-Eval-Print Loop (REPL).
+It provides a persistent interactive interface designed to parse user input, manage environment variables, and execute commands within a Read-Eval-Print Loop (REPL).
 
 The project serves as a practical exploration of systems programming in C, focusing on process management, environment handling, and string manipulation using a custom utility library.
 
@@ -43,8 +43,6 @@ flowchart TD
     D -.-> C
 ```
 
-**Sources:**[src/main.c11-23](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/main.c#L11-L23)[src/shell_loop.c51-68](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/shell_loop.c#L51-L68)[src/env.c11-30](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/env.c#L11-L30)[includes/env.h11-16](https://github.com/Igbescobar/minishell/blob/aaffaa2b/includes/env.h#L11-L16)
-
 ## Project Organization
 
 The codebase is structured to separate the core shell logic from utility functions and header definitions.
@@ -55,8 +53,6 @@ The codebase is structured to separate the core shell logic from utility functio
 | `includes/` | Definitions | `minishell.h`, `env.h` |
 | `libft/` | Utility Library | Custom `printf`, `get_next_line`, and standard C functions |
 | `obj/` | Build Artifacts | Compiled `.o` files |
-
-For a detailed breakdown of the file roles and the compilation process, see [Project Structure](/Igbescobar/minishell/1.2-project-structure).
 
 ## Execution Flow
 
@@ -80,4 +76,5 @@ sequenceDiagram
 
 ## Getting Started
 
-To compile Minishell, you require `gcc`, `make`, and the `libreadline-dev` library [README.md14-17](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L14-L17) The build process is managed via a root `Makefile` that also triggers the compilation of the internal `libft` library
+To compile Minishell, you require `gcc`, `make`, and the `libreadline-dev` library 
+The build process is managed via a root `Makefile` that also triggers the compilation of the internal `libft` library
