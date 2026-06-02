@@ -1,8 +1,4 @@
 # Minishell Overview
-Relevant source files
-- [Makefile](https://github.com/Igbescobar/minishell/blob/aaffaa2b/Makefile)
-- [README.md](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1)
-
 Minishell is a custom implementation of a basic command-line shell, modeled after `bash`[README.md1-3](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L1-L3) It provides a persistent interactive interface designed to parse user input, manage environment variables, and execute commands within a Read-Eval-Print Loop (REPL).
 
 The project serves as a practical exploration of systems programming in C, focusing on process management, environment handling, and string manipulation using a custom utility library.
@@ -88,7 +84,3 @@ sequenceDiagram
 ## Getting Started
 
 To compile Minishell, you require `gcc`, `make`, and the `libreadline-dev` library [README.md14-17](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L14-L17) The build process is managed via a root `Makefile` that also triggers the compilation of the internal `libft` library [Makefile20-22](https://github.com/Igbescobar/minishell/blob/aaffaa2b/Makefile#L20-L22)
-
-For a step-by-step guide on installation and basic usage, see [Getting Started](/Igbescobar/minishell/1.1-getting-started).
-
-**Sources:**[README.md21-31](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L21-L31)[Makefile1-22](https://github.com/Igbescobar/minishell/blob/aaffaa2b/Makefile#L1-L22)
