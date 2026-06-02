@@ -1,5 +1,6 @@
 # Minishell Overview
-Minishell is a custom implementation of a basic command-line shell, modeled after `bash`[README.md1-3](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L1-L3) It provides a persistent interactive interface designed to parse user input, manage environment variables, and execute commands within a Read-Eval-Print Loop (REPL).
+Minishell is a custom implementation of a basic command-line shell, modeled after `bash`
+(https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L1-L3) It provides a persistent interactive interface designed to parse user input, manage environment variables, and execute commands within a Read-Eval-Print Loop (REPL).
 
 The project serves as a practical exploration of systems programming in C, focusing on process management, environment handling, and string manipulation using a custom utility library.
 
@@ -7,10 +8,10 @@ The project serves as a practical exploration of systems programming in C, focus
 
 The shell implements several core functionalities required for a modern terminal interface:
 
-- **Interactive Prompt**: A dynamic prompt that reflects the current context in the format `user@hostname:path$`[README.md7](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L7-L7)
-- **Command History**: Integration with the `readline` library to allow users to navigate previous commands using arrow keys [README.md8](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L8-L8)
-- **Environment Management**: The shell creates an internal managed copy of the system's environment variables (`char **envp`) upon startup [README.md9](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L9-L9)
-- **Input Tokenization**: Initial support for parsing and splitting commands, specifically handling the pipe (`|`) character [README.md10](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L10-L10)
+- **Interactive Prompt**: A dynamic prompt that reflects the current context in the format `user@hostname:path$`
+- **Command History**: Integration with the `readline` library to allow users to navigate previous commands using arrow keys
+- **Environment Management**: The shell creates an internal managed copy of the system's environment variables (`char **envp`) upon startup
+- **Input Tokenization**: Initial support for parsing and splitting commands, specifically handling the pipe (`|`) character
 
 ## System Components
 
@@ -57,8 +58,6 @@ The codebase is structured to separate the core shell logic from utility functio
 
 For a detailed breakdown of the file roles and the compilation process, see [Project Structure](/Igbescobar/minishell/1.2-project-structure).
 
-**Sources:**[README.md50-64](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L50-L64)[Makefile9-13](https://github.com/Igbescobar/minishell/blob/aaffaa2b/Makefile#L9-L13)
-
 ## Execution Flow
 
 The following diagram maps the high-level logic flow from the program entry point to the command processing phase.
@@ -79,8 +78,6 @@ sequenceDiagram
     M->>E: free_env(t_env *env)
 ```
 
-**Sources:**[src/main.c11-23](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/main.c#L11-L23)[src/shell_loop.c51-68](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/shell_loop.c#L51-L68)[src/env.c54-66](https://github.com/Igbescobar/minishell/blob/aaffaa2b/src/env.c#L54-L66)
-
 ## Getting Started
 
-To compile Minishell, you require `gcc`, `make`, and the `libreadline-dev` library [README.md14-17](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L14-L17) The build process is managed via a root `Makefile` that also triggers the compilation of the internal `libft` library [Makefile20-22](https://github.com/Igbescobar/minishell/blob/aaffaa2b/Makefile#L20-L22)
+To compile Minishell, you require `gcc`, `make`, and the `libreadline-dev` library [README.md14-17](https://github.com/Igbescobar/minishell/blob/aaffaa2b/README.md?plain=1#L14-L17) The build process is managed via a root `Makefile` that also triggers the compilation of the internal `libft` library
